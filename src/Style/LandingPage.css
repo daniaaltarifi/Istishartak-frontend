@@ -1,0 +1,607 @@
+/* ::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--background);
+}
+
+html {
+  scroll-snap-type: y mandatory;
+} */
+
+
+section {
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  scroll-snap-align: center;
+  perspective: 500px;
+}
+
+section>div {
+  width: 313px;
+  height: 400px;
+  position: relative;
+  background: var(--white);
+}
+
+/* img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  /* background: var(--accent); */
+  bottom: 100px;
+}
+
+
+body {
+  background-image: url("../Images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow: hidden;
+  /* Hide any content that overflows */
+
+}
+
+
+
+
+
+
+.style_img img {
+    position: relative;
+    height: 400px;
+    /* width: 48%; */
+  border-radius: 15px;
+  /* margin-top: 5%; */
+  margin-left: 6%;
+  /* z-index: 2; */
+  top: 39px;
+}
+.container_text{
+margin-top: -20%;
+width: 100%;
+margin-left: 10%;
+}
+
+.mockup_phone {
+  position: absolute;
+  background: url('../Images/hand-mockup-opacity.png') top no-repeat;
+  width: 230px;
+  height: 478px;
+  background-size: 100%;
+  left: 3%; /* Adjust this value to position the frame horizontally */
+  top: 4px;  /* Adjust this value to position the frame vertically */
+  z-index: 1;
+  overflow: hidden;
+}
+
+.style_img {
+  position: relative;
+}
+
+.cont_contact{
+  margin-top: 20%;
+}
+
+.main_container {
+  /* margin-top: 4%; */
+    z-index: -1;
+  margin-bottom: 5%;
+}
+
+/* .chnage{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+     position: absolute;
+    top: 19px;
+    width: 212px;
+    border-radius: 15px;
+  } */
+/* .mockup_phone {
+    background-image: url("../Images/hand-mockup.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 390px;
+    height: 500px;
+    position: relative;
+  }
+  .mockup_phone img {
+    position: absolute;
+    top: 19px;
+    width: 212px;
+    border-radius: 15px;
+  } */
+.font_title {
+  font-size: 40px;
+  color: #048897;
+}
+
+@media screen and (max-width:768px) {
+  .mockup_phone {
+    display: none;
+  }
+.style_img img{
+  display: none;
+}
+.container_text{
+  margin-top: -23%;
+}
+  .changing_img {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  /* .changing_img img {
+    display: none;
+  } */
+  .font_title {
+    font-size: 40px;
+    align-items: center;
+  }
+
+  /* #FORDOCTOR{
+    margin-top: 50%;
+  } */
+  /* #BOOKING{
+    margin-top: 160%;
+  } */
+  .main_container {
+    /* margin-left: 30%; */
+    margin-top: 25%;
+  }
+
+
+}
+
+
+
+.stayingHealth {
+  width: 70%;
+  font-weight: normal;
+}
+
+
+.tabs {
+  background-color: #fff;
+
+}
+
+.unorderlist {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* .unorderlist li a {
+    color: #000;
+    font-size: 17.5px;
+  } */
+/* .unorderlist li a {
+    color: #000;
+    font-size: 17.5px;
+  } */
+
+.nav-tabs .nav-link.active {
+  border-color: #048897;
+  color: #000;
+}
+
+.nav-tabs {
+  background-color: #fff;
+  width: 74%;
+}
+
+.tabs_content {
+  color: #000;
+  font-size: 18px;
+
+}
+
+.nav-item {
+  width: 25%;
+}
+
+.nav-tabs .nav-link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  --mdb-nav-tabs-link-padding-x: 2px;
+}
+
+.nav-item .nav-link {
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+
+  /* margin-left: 0; */
+}
+
+@media screen and (max-width:768px) {
+  .nav-item {
+    width: 50%;
+  }
+  .cont_contact{
+    margin-top: -15%;
+  }
+}
+
+.btn_book_now {
+  background-color: #048897;
+  color: #fff;
+  font-weight: bold;
+}
+
+.why_istishratk ul li {
+  color: #048897;
+  margin-bottom: 5%;
+}
+
+.input_contact {
+  border: none;
+  background-color: #ede9e9
+}
+
+
+
+.input_contact:active {
+  background-color: #048897;
+}
+
+.footer_full {
+  display: flex;
+  justify-content: space-between;
+  /* Use space-between to separate the two columns */
+}
+
+.border_footer {
+  border: 2px solid #8c8b8b;
+  width: 30px;
+  border-radius: 6px;
+  height: 30px;
+  margin: 3px;
+}
+
+.icon_color {
+  color: #048897;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border_footer:hover {
+  background-color: #048897;
+}
+
+.icon_color:hover {
+  color: #fff;
+}
+
+.footer_istishartak {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 150px;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+/* Add this class to the footer payment div */
+.footer_payment {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Apply a smaller width to the payment images */
+.footer_payment img {
+  width: 30px;
+  /* Adjust the width as needed */
+  margin-top: 10px;
+  /* Adjust the margin as needed */
+  margin-right: 5px;
+}
+
+.icon {
+  margin: 5px;
+}
+
+/* Add these styles to your CSS */
+.dots {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-left: 0;
+  height: 100%;
+}
+
+.sidebar.open+.dots {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .dots {
+    display: none;
+  }
+}
+
+/* Define styles for the card */
+/* Define styles for the card */
+/* .card {
+  display: none; 
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  top: -100px;
+
+}
+
+
+.hover_card:hover + .card {
+  display: block;
+
+} */
+
+/*tooltip*/
+
+
+.tooltip {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  visibility: visible;
+  font-size: 16px;
+  line-height: 1.4;
+  opacity: 1;
+  filter: alpha(opacity=0);
+}
+
+.tooltip {
+  position: relative
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  bottom: 100%;
+  left: 50%;
+  pointer-events: none;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.tooltip:hover::after {
+  pointer-events: auto
+}
+
+.tooltip-content {
+  position: absolute;
+  z-index: 9999;
+  width: 335px;
+  left: 50%;
+  bottom: 100%;
+  color: #111;
+  background: transparent;
+  opacity: 0;
+  margin: 0 0 20px -167px;
+  cursor: default;
+  pointer-events: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: opacity 0.3s 0.3s;
+  transition: opacity 0.3s 0.3s;
+}
+
+.tooltip:hover .tooltip-content {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.tooltip-content span {
+  display: block
+}
+
+.tooltip-text {
+  border-bottom: 10px solid #048897;
+  overflow: hidden;
+  -webkit-transform: scale3d(0, 1, 1);
+  transform: scale3d(0, 1, 1);
+  -webkit-transition: -webkit-transform 0.3s 0.3s;
+  transition: transform 0.3s 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+.tooltip-inner {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  min-height: 80px;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  color: #000;
+  font-size: 20px;
+  min-width: 350px;
+}
+
+.tooltip:hover .tooltip-inner {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.tooltip a {
+  color: #111;
+  font-weight: bold;
+}
+
+.tooltip a:hover {
+  color: #048897
+}
+
+.tooltip-content::after {
+  content: '';
+  bottom: -20px;
+  left: 50%;
+  border: solid transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-top-color: #048897;
+  border-width: 10px;
+  margin-left: -10px;
+}
+.getintouch{
+  margin-left: 3%;
+}
+@media screen and (min-width:769px) and (max-width:1024px) {
+  .font_title {
+    font-size: 32px;
+  }
+
+  .nav-item {
+    width: 33%;
+  }
+}
+
+/* @media screen and (max-width:1280px) {
+  .nav-item {
+    width: 33%;
+  }
+} */
+@media screen and (max-width:482px) {
+  /* .main_container {
+    margin-left: 43%;
+  } */
+.mockup_phone{
+  display: none;
+}
+.style_img img{
+  display: none;
+}
+  .font_title {
+    font-size: 28px;
+    text-align: center;
+    width: 150%;
+    margin-left: -46px;
+  }
+  .container_text{
+    margin-top: -13%;
+  }
+  .paragraph_title {
+    text-align: center;
+
+  }
+
+  .tabs_content {
+    font-size: 15px;
+  }
+
+  .btn_book_now {
+    margin-left: 10%;
+  }
+
+  .nav-item .nav-link {
+    text-align: center;
+  }
+
+  .tabs_content {
+    padding-left: 21%;
+  }
+
+  .desc_tabs {
+    text-align: center;
+
+  }
+
+  .btn_book_now {
+    width: 57%;
+    margin-left: 5%;
+/* height: 5%; */
+font-size: 8px;
+  }
+
+}
+
+/* 
+}
+/* Define styles for the card */
+
+/* .tooltip {
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  visibility: hidden;
+  padding: 5px;
+  border-radius: 5px;
+}
+.tooltip-arrow {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.7) transparent transparent;
+} */
+
+
+/* Add styling to the card */
+
+/* .mockup_phone {
+background-image: url("../Images/hand-mockup.png");
+background-repeat: no-repeat;
+background-size: contain;
+width: 390px;
+height: 450px;
+position: fixed;
+top: 290px; 
+left: 70%; 
+transform: translateX(-50%);
+}
+.changing_img {
+position: absolute;
+top: 190px;
+width: 190px;
+height:50px;
+border-radius: 15px;
+} */

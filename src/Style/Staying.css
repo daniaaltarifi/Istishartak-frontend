@@ -1,0 +1,182 @@
+/* Animation for sliding in from the left and right for content */
+/* Initial state for all images */
+.visible {
+  transition: transform 1.2s ease, opacity 1.2s ease;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Hide images that are not current or next */
+.hidden {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+
+.current-image {
+  animation: slideImageToTop 1.2s ease ;
+}
+
+.next-image {
+  animation: slideImageFromBottom 1.2s ease both ;
+}
+
+
+@keyframes slideImageToTop {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-105%);
+  }
+}
+
+@keyframes slideImageFromBottom {
+  0% {
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-105%);
+
+  }
+ 
+}
+
+.reverse-scroll img {
+top: 20px;
+}
+
+
+
+/* Animation for sliding in from the left and right for content */
+@keyframes slideFromBottomAll {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromTopContent{
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to the content */
+.change-content {
+  opacity: 0;
+  animation: slideFromBottomAll 1.2s ease forwards; /* Use the animation on the content */
+}
+
+.change-content-reverse {
+  opacity: 0;
+  animation: slideFromTopContent 1.2s ease forwards; /* Use the reverse animation on the content */}
+  
+  
+  /* .change-Image {
+    opacity: 0;
+    animation: slideFromBottomAll 1.2s ease forwards; 
+  } */
+.change-image-reverse{
+  opacity: 0;
+  animation: slideImageReverse 1.2s ease forwards; /* Use the reverse animation on the content */
+}
+@keyframes slideImageReverse{
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    opacity: 1;
+    visibility: hidden;
+    transform: translateY(0);
+  }
+}
+/* .next-image.change-image-reverse {
+display: none;
+} */
+
+/**********************************88/
+/* Define animations for each ID */
+/* @keyframes slideFromLeft-OURDOCTOR {
+  0% {
+    opacity: 1;
+    transform: translateY(3%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromRight-OURDOCTOR {
+  0% {
+    opacity: 1;
+    transform: translateY(-3%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromLeft-FORDOCTOR {
+  0% {
+    opacity: 1;
+    transform: translateY(3%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromRight-FORDOCTOR {
+  0% {
+    opacity: 1;
+    transform: translateY(-3%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+/* Repeat the pattern for all other possible IDs */
+
+/* Apply animation to the content */
+/* .change-content {
+  opacity: 0;
+  animation: slideFromLeft 0.9s ease forwards;
+}
+
+.change-content-reverse {
+  opacity: 0;
+  animation: slideFromRight 0.9s ease forwards;
+}
+
+.change-content-OURDOCTOR {
+  animation-name: slideFromLeft-HOME;
+}
+
+.change-content-reverse-OURDOCTOR {
+  animation-name: slideFromRight-HOME;
+}
+
+.change-content-FORDOCTOR {
+  animation-name: slideFromLeft-BOOKING;
+}
+
+.change-content-reverse-FORDOCTOR {
+  animation-name: slideFromRight-BOOKING;
+} */
