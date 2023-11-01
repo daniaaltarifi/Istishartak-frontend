@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import PrivacyPolicy from './Components/PrivacyPolicy';
 import TermsAndConditions from './Components/TermsAndConditions';
 import BookNow from './Components/BookNow';
-import Html from './Components/Html';
 import Box from './Components/Scroll';
 import StayingHealth from './Components/StayingHealth';
 import StayNew from './Components/StayNew';
